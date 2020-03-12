@@ -4,7 +4,7 @@ use karpy47\PhpMqttClient\MQTTClient;
 
 
 try {
-    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv = Dotenv\Dotenv::createImmutable(getcwd());
     $dotenv->load();
 
     //Netatmo client configuration
