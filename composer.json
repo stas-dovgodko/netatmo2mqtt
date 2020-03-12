@@ -1,0 +1,42 @@
+{
+  "name": "stas-dovgodko/netatmo2mqtt",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Stas Dovgodko",
+      "email": "standov@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "N2M\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "netatmo/php",
+        "version": "master",
+        "dist": {
+          "url": "dist/Netatmo-API-PHP-master.zip",
+          "type": "zip"
+        },
+        "autoload": {
+          "psr-4": {
+            "Netatmo\\": "src/Netatmo/"
+          }
+        }
+      }
+    }
+  ],
+  "require": {
+    "vlucas/phpdotenv": "~4.1",
+    "netatmo/php": "master",
+    "karpy47/php-mqtt-client": "v1.0.4"
+  },
+  "require-dev": {
+    "kherge/box": "~2.7"
+  }
+}
