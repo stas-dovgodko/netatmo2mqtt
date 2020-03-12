@@ -25,3 +25,8 @@ MQTT_PASSWORD=
 MQTT_CLIENT_ID=netatmopooler
 MQTT_DEBUG=0
 ```
+
+
+## MQTT
+
+Check `netatmo/WS/#` topic to get data from netatmo API
