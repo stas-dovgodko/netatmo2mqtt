@@ -2,15 +2,13 @@
 
 PHP based netatmo weather API to mqtt gateway.
 
-For IoT diy stuff to upload and visualize data in grafana
-
-Please add local config just like _.env.example_ somewhere near and run:
+Please add local .env just like _.env.example_ somewhere near and run:
  
  `php pooler.phar`
 
 Can use plain pooler.php instead of phar too
 
-Config example:
+.env example:
 
 ```
 NETATMO_CLIENTID=111111112222222223333333333333444444
