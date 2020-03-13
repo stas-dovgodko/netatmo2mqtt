@@ -6,7 +6,14 @@ Please add local .env just like _.env.example_ somewhere near and run:
  
  `php pooler.phar`
 
-Can use plain pooler.php instead of phar too
+Can use plain pooler.php instead of phar too.
+
+Add pooler to crontab to get actual data for each 1min
+
+
+```
+*/1 * * * * cd ~/netatmo2mqtt/ && php ./pooler.phar
+```
 
 .env example:
 
